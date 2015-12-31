@@ -25,7 +25,7 @@ class Typo extends Page_Controller
         $this->ExtraMeta .= '<meta name="robots" content="noindex, nofollow" />';
     }
 
-    function TypoForm()
+    public function TypoForm()
     {
         $array= array('green', 'yellow', 'blue', 'pink', 'orange');
         $form = new Form(
@@ -74,7 +74,7 @@ class Typo extends Page_Controller
         return $form;
     }
 
-    function TestForm($data)
+    public function TestForm($data)
     {
         $this->redirectBack();
     }
